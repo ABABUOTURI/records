@@ -1,9 +1,8 @@
-"use client"; // ✅ Ensures this is a Client Component
+"use client"; 
 
 import React, { useState, useEffect } from "react";
 import { FaEnvelope, FaEye, FaEyeSlash } from "react-icons/fa";
-import "../styles/globals.css"; // Import global styles
-//import { useRouter } from "next/navigation";
+import "../styles/globals.css";
  import { useRouter } from "next/router";
 import { signIn } from "next-auth/react";
 
@@ -28,13 +27,13 @@ const SigninPage = () => {
     setLoading(true);
   
     const result = await signIn("credentials", {
-      redirect: false, // Prevents default redirect
-      email, // Use entered email
-      password, // Use entered password
+      redirect: false,
+      email, 
+      password,
     });
   
     if (result?.ok) {
-      router.push("/Employee"); // Navigate to Employee page on success
+      router.push("/Employee"); 
     } else {
       alert("Sign-in failed! Invalid credentials.");
     }

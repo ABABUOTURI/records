@@ -24,20 +24,7 @@ const SignupPage = () => {
   }, []);
 
 
-  //  submit data to a signup API
-  // const handleSignup = async () => {
-  //   const res = await fetch("/api/auth/signup", {
-  //     method: "POST",
-  //     body: JSON.stringify({ firstName, lastName, email, password }),
-  //     headers: { "Content-Type": "application/json" },
-  //   });
-  
-  //   if (res.ok) {
-  //     router.push("/SigninPage");
-  //   } else {
-  //     alert("Signup failed!");
-  //   }
-  // };
+ 
   const handleSignup = async () => {
     if (!firstName || !lastName || !email || !password) {
       alert("Please fill all fields");
@@ -58,7 +45,7 @@ const SignupPage = () => {
         alert(errorData.message || "Signup failed!");
       }
     } catch (error) {
-      console.error("Signup error:", error);
+     
       alert("An error occurred. Please try again.");
     }
   };

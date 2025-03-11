@@ -47,11 +47,11 @@ export const authOptions = {
       return true;
     },
     async session({ session, token }) {
-      session.user = token.user; // ✅ Include user in session
+      session.user = token.user; 
       return session;
     },
     async jwt({ token, user }) {
-      if (user) token.user = user; // ✅ Ensure JWT stores user info
+      if (user) token.user = user; 
       return token;
     },
   },

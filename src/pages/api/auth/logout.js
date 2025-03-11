@@ -6,12 +6,12 @@ const client = new MongoClient(process.env.MONGODB_URI);
 export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
-      const { userId } = req.body; // You will send the userId in the request body
+      const { userId } = req.body; 
 
       // Connect to MongoDB
       await client.connect();
-      const db = client.db("employee"); // Replace with your database name
-      const usersCollection = db.collection("users"); // Replace with your collection name
+      const db = client.db("employee"); 
+      const usersCollection = db.collection("users"); 
 
       // Delete the user from MongoDB
       const result = await usersCollection.deleteOne({ _id: userId });
