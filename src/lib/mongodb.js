@@ -1,5 +1,5 @@
 import { MongoClient } from "mongodb";
-import mongoose from "mongoose";
+
 
 const MONGODB_URI = "mongodb+srv://ababuoturi:HtF99FHKJUv6ifZb@mycluster.6n6qd.mongodb.net/employee?retryWrites=true&w=majority";
 const MONGODB_DB = "employee";   
