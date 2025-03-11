@@ -14,23 +14,50 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Employee Record Management Web App
+📌 Overview
+This project is a Full-Stack Employee Record Management Web App built using Next.js, React, MongoDB, and NextAuth.js. The application allows users to Create, Read, Update, and Delete employee records while implementing authentication to restrict access.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📋 Features
+✅ Task 1: CRUD Operations (Next.js & MongoDB)
+Create a new employee record with First Name, Last Name, Email, Phone, and Role (Admin/Staff).
 
-## Learn More
+Read and display all employee records in a list.
 
-To learn more about Next.js, take a look at the following resources:
+Update employee details (First Name, Last Name, and Phone).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Delete an employee record.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Uses Next.js API routes for backend operations.
 
-## Deploy on Vercel
+Stores data in MongoDB with Mongoose schemas.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Implements Server-Side Rendering (SSR) or Static Site Generation (SSG) for better performance.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+UI designed using React & Tailwind CSS.
+
+Ensures error handling & form validations.
+
+✅ Task 2: Authentication (NextAuth.js)
+User sign up, log in, and log out functionality.
+
+JWT-based authentication using NextAuth.js.
+
+Only authenticated users can manage employee records.
+
+Session management to protect API routes.
+
+⚙️ Technologies Used
+Next.js (React Framework)
+
+React.js (Frontend UI)
+
+MongoDB & Mongoose (Database)
+
+NextAuth.js (Authentication)
+
+Tailwind CSS (Styling)
+
+Vercel/Netlify (Deployment)
+
