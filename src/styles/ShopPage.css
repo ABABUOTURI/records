@@ -1,0 +1,154 @@
+/* General Page Styling */
+.shop-container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #ffeb99, #ff9800);
+    padding: 2rem;
+}
+
+/* Sticky & Floating Search Filters */
+.shop-search-filter {
+    position: fixed; /* Fixed position so it stays on top */
+    top: 12%; /* Distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Align center */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays on top */
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Search and Filter Inputs */
+.shop-search-filter input,
+.shop-search-filter select {
+    padding: 0.5rem;
+    border: 2px solid #8bc233;
+    background-color: #ffffff;
+    color: #666;
+    border-radius: 8px;
+    outline: none;
+}
+
+.shop-search-filter input {
+    width: 60%;
+}
+
+.shop-search-filter select {
+    width: 35%;
+    cursor: pointer;
+}
+
+/* Ensure content doesn't go behind the filters */
+.shop-content {
+    margin-top: 100px; /* Push the content down */
+}
+
+/* Product Grid */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 5rem; /* Ensure grid is below the floating filter */
+}
+
+/* Product Card */
+.shop-card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.shop-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Image */
+.shop-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Product Text */
+.shop-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+
+.shop-card p {
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Price */
+.shop-card .shop-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8bc233;
+    margin-top: 0.5rem;
+}
+
+/* View Details Button */
+.shop-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    background: #8bc233;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.shop-card a:hover {
+    background: #e65100;
+}
+
+/* Hero Section with Background Slideshow */
+.hero-sections {
+    background-image: url("/assets/A1.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: relative;
+    color: white;
+    padding: 0 20px;
+    animation: backgroundSlide 12s infinite;
+}
+
+/* Background Slideshow Animation */
+@keyframes backgroundSlide {
+    0% {
+        background-image: url("/assets/A1.jpg");
+    }
+    14.29% {
+        background-image: url("/assets/A2.jpg");
+    }
+    28.57% {
+        background-image: url("/assets/A3.jpg");
+    }
+    42.86% {
+        background-image: url("/assets/A4.jpg");
+    }
+    57.14% {
+        background-image: url("/assets/A5.jpg");
+    }
+    71.43% {
+        background-image: url("/assets/A6.jpg");
+    }
+    85.71% {
+        background-image: url("/assets/A7.jpg");
+    }
+    100% {
+        background-image: url("/assets/A1.jpg");
+    }
+}

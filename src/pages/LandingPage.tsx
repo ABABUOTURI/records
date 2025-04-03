@@ -1,7 +1,7 @@
 // pages/LandingPage.tsx
 "use client";
 import React from "react";
-import Header from "@/pages/Headers"; // Import the Header component
+import Header from "@/components/head"; // Import the Header component
 import "@/styles/LandingPage.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
